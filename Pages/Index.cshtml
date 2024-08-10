@@ -3,10 +3,10 @@
 @{
     ViewData["Title"] = "Home page";
 }
- 
+
 
 <div class="text-center">
-    <object id="logo" data="logo.svg" image-rendering="optimizeQuality" width="300" height="300" type="image/svg+xml"></object>
+    <object id="logo" data="Assets/Logo/logo.svg" image-rendering="optimizeQuality" width="300" height="300" type="image/svg+xml"></object>
     <div class="centered-index-subtitle-div">
         <div class="index-subtitle-div-columns">
             <div class="mplus-regular index-subtitle-div-column">Find</div>
@@ -17,4 +17,41 @@
         </div>
     </div>
     <h1 class="mplus-regular display-4" style="margin-top: 50px; font-size: 120px">@nameof(Assets.AthletLink)</h1>
+
 </div>
+<p />
+
+<div class="slideshow-container">
+
+    <div class="slides fade crop fill">
+        <img src="~/Assets/Images/101.jpg">
+    </div>
+
+    <div class="slides fade crop fill">
+        <img src="~/Assets/Images/41.jpg">
+    </div>
+
+    <div class="slides fade crop fill">
+        <img src="~/Assets/Images/21.jpg">
+    </div>
+
+</div>
+<br>
+
+<script>
+    let slideIndex = 0; 
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000);
+    }
+</script>
+
