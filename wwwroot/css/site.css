@@ -19,10 +19,13 @@ html {
 
 body {
     margin-bottom: 60px;
-    background: linear-gradient(to left top, #CEDFF412, #90A3B4de);
     background-attachment: fixed;
     min-width: 1000px;
-    width: auto !important; 
+    width: auto !important;
+}
+
+#main-gradient {
+    background: linear-gradient(to left top, #CEDFF412, #90A3B4de);
 }
 
 .centered-index-subtitle-div {
@@ -87,12 +90,12 @@ p {
     display: none;
 }
 
-.fade {
-    animation-name: fade;
+.fadeshow {
+    animation-name: fadeshow;
     animation-duration: 2s;
 }
 
-@keyframes fade {
+@keyframes fadeshow {
     from {
         opacity: .1
     }
