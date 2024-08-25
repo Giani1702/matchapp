@@ -99,17 +99,17 @@ body {
 
 .vertical-line-left {
     border-left: 2px solid black;
-    height: 50%;
+    height: 55%;
     position: absolute; 
-    top: 15%;    
+    top:  5%;    
     left: 40px;
 }
 
 .vertical-line-right {
     border-left: 2px solid black;
-    height: 50%;
+    height: 55%;
     position: absolute;
-    top: 15%;
+    top: 5%;
     right: 40px;
 }
 
@@ -121,6 +121,10 @@ p {
 }
  
 .slides {
+    display: none;
+}
+
+.slides2 {
     display: none;
 }
 
@@ -144,11 +148,12 @@ p {
     background-size: cover;
     background-position: center;
     object-fit: contain;
-    height: 55%;
+    height: 25%;
     min-height: 10px;
-    overflow: clip;
+    overflow: clip; 
 }
     .crop img {
-        width: 100%; 
+        width: 100%;  
+        margin-bottom: 20px;
         overflow: clip;
     }
