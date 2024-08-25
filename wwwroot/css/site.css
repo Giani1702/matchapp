@@ -154,6 +154,6 @@ p {
 }
     .crop img {
         width: 100%;  
-        margin-bottom: 20px;
+        margin-top: -300px;
         overflow: clip;
     }
