@@ -18,26 +18,20 @@
 </head>
 <body id="main-gradient">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+        <nav class="navbar navbar-expand-xs navbar-toggleable-xs navbar-light bg-white border-bottom box-shadow mb-3" style="height: 50px; ">
+            <div class="container" style="width: auto; position: absolute; float: left;">
                 <object id="ballLogo" data="Assets/Logo/ball_logo.svg" width="30" height="30" image-rendering="optimizeQuality" style="margin-right: -5px" type="image/svg+xml"></object>
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
                     <a class="mali-regular navbar-brand" style="transform: rotate(180deg); margin-right: 0px; margin-left: 0px; margin-top: 0px; font-size: 26px" asp-area="" asp-page="/Index">V</a>
-                    
+
                     @{
                         var appName = nameof(Assets.AthletLink);
                         var navBarAppName = appName[1..];
                     }
-                    
+
                     <a class="mplus-regular navbar-brand" style="font-size: 26px" asp-area="" asp-page="/Index">@navBarAppName</a>
-                    </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false"  aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                </div>
-            </div>
+                </a>
+            </div> 
         </nav>
     </header>
     <div>
@@ -45,7 +39,7 @@
             @RenderBody()
         </main>
     </div>
-     
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

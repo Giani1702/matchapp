@@ -20,7 +20,7 @@ html {
 body {
     margin-bottom: 60px;
     background-attachment: fixed;
-    min-width: 1000px;
+    min-width: 768px;
     width: auto !important;
 }
 
@@ -80,7 +80,7 @@ body {
     background-size: cover;
     background-position: center;
     object-fit: contain;
-    height: 20%;
+    height: 50%;
     width: 100%;
     height: 20%;
     object-fit: contain;
@@ -148,12 +148,11 @@ p {
     background-size: cover;
     background-position: center;
     object-fit: contain;
-    height: 25%;
+    height: 55vh;
     min-height: 10px;
     overflow: clip; 
 }
     .crop img {
-        width: 100%;  
-        margin-top: -300px;
+        width: 100%;   
         overflow: clip;
     }
